@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <title></title>
+</head>
+<body>
+
+        <div class="jumbotron jumbotron-fluid p-3 mb-2 bg-dark text-white">
+                <div class="container">
+                  <h1 class="display-4">MSE Airlines Arrival/Departure</h1>
+                  <p class="lead"></p>
+                </div>
+              </div>
+
+        <table class="table table-hover table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">Flight#</th>
+                    <th scope="col">Departed</th>
+                    <th scope="col">Arrive in </th>
+                    <th scope="col">Destination</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>11:35pm</td>
+                    <td>8min</td>
+                    <td>The6</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>4:37am</td>
+                    <td>8min</td>
+                    <td>Gyalchester</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>8:38pm</td>
+                    <td>8min</td>
+                    <td>La La Land</td>
+                  </tr>
+                  <tr>
+                        <th scope="row">1</th>
+                        <td>10:38pm</td>
+                        <td>8min</td>
+                        <td>Houstonlantavegas</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>10:39pm</td>
+                        <td>8min</td>
+                        <td>LilWeezyana</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>11:40pm</td>
+                        <td>8min</td>
+                        <td>Portland</td>
+                      </tr>
+                </tbody>
+              </table>
+              <div class= "panel tbody p-3 mb-2 bg-dark text-white">
+                  <form role="form">
+                      <div class ="form-group p-3 mb-2 bg-dark text-white">
+                            <label for="text"> FlightNum</label>
+                            <input type="text" class="form form-control p-3 mb-2 bg-dark text-white" id="flightInput">
+                      </div>
+                      <div class ="form-group">
+                            <label for="text"> Departed</label>
+                            <input type="text" class="form-control p-3 mb-2 bg-dark text-white" id="departedInput">
+                      </div>
+                      <div class ="form-group">
+                            <label for="text"> Arrive In</label>
+                            <input type="text" class="form-control p-3 mb-2 bg-dark text-white" id="arriveInInput">
+                      </div>
+                      <div class ="form-group">
+                            <label for="text"> Destination</label>
+                            <input type="text" class="form-control p-3 mb-2 bg-dark text-white" id="placeInput">
+                      </div>
+                      <button type="submit" class="btn btn-dark" id="addFlight">Submit</button>
+                  </form>   
+              </div>
+
+              <div class="col-lg-6">
+                  <di class="panel tbody-default">
+                      <div class="panel-heading">
+                          <h3 class="panel-title">Add flight</h3>
+                      </div>
+                      <div class="table table-hover table-dark">
+                          <h2 id="flightDisplay"></h2>
+                          <h2 id="departedDisplay"></h2>
+                          <h2 id="arriveInDisplay"></h2>
+                          <h2 id="placeDisplay"></h2>
+                      </div>
+                  </div>
+              </div>
+              <script
+              src="http://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+              <script src="assets/app.js"></script>  
+</body>
+</html>
